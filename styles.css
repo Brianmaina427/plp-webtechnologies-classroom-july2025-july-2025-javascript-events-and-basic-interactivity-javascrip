@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+section {
+    background: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dark-mode section {
+    background: #444;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode button {
+    background-color: #555;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.hidden {
+    display: none;
+}
+
+.interactive-card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #007BFF;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}

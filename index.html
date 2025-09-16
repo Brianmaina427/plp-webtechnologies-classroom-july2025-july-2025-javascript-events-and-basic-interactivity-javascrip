@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Pages</title>
+    <link rel="stylesheet" href="C:\Users\User\OneDrive\Desktop\PLP\Web Technologies\styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Pages with JavaScript</h1>
+    </header>
+
+    <section id="event-handling">
+        <h2>🎉 Part 1: JavaScript Event Handling</h2>
+        <button id="toggleMessageBtn">Show/Hide Message</button>
+        <p id="message" class="hidden">This is a hidden message! Click the button to toggle my visibility.</p>
+    </section>
+
+    ---
+
+    <section id="interactive-elements">
+        <h2>🎮 Part 2: Interactive Elements</h2>
+        
+        <div class="interactive-card">
+            <h3>Light/Dark Mode</h3>
+            <button id="modeToggleBtn">Toggle Mode</button>
+        </div>
+
+        <div class="interactive-card">
+            <h3>Collapsible FAQ</h3>
+            <div class="faq-item">
+                <button class="faq-question">What is JavaScript?</button>
+                <div class="faq-answer">
+                    <p>JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and much more.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is DOM?</button>
+                <div class="faq-answer">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="form-validation">
+        <h2>📋✅ Part 3: Form Validation</h2>
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <button type="submit">Submit</button>
+            <p id="formSuccess" class="success-message"></p>
+        </form>
+    </section>
+
+    <script src="C:\Users\User\OneDrive\Desktop\PLP\Web Technologies\script.js"></script>
+</body>
+</html>
